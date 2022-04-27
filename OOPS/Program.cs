@@ -1,5 +1,6 @@
 ﻿using OOPS.InventoryDataManagement;
 using OOPS.InventoryManagementProgram;
+using OOPS.StockAccountManagement;
 using System;
 namespace OOPS
 {
@@ -13,8 +14,10 @@ namespace OOPS
             InventoryData data = new InventoryData();
             const string INVENTORY_MANAGEMENT_PATH = @"D:\RFP BATCH 135\ObjectOrientedPrograms\OOPS\OOPS\InventoryManagementProgram\InventoryList.json";
             InventoryManager manager = new InventoryManager();
+            const string STOCK_DATA_PATH = @"D:\RFP BATCH 135\ObjectOrientedPrograms\OOPS\OOPS\StockAccountManagement\StockList.json";
+            StockManager stockmanager = new StockManager();
 
-            Console.WriteLine("1. Display the Inventory Data\n2. Add the Inventory Data\n3. Edit the Inventory Data\n4. Exit the Program" );
+            Console.WriteLine("1. Display the Inventory Data\n2. Add the Inventory Data\n3. Edit the Inventory Data\n4. Stock Data Management\n5. Exit the Program" );
             bool check = true;
             while (check)
             {
@@ -41,6 +44,9 @@ namespace OOPS
                         manager.EditInventory(inventoryName2, grain2, INVENTORY_MANAGEMENT_PATH);
                         break ;
                     case 4:
+                        stockmanager.DisplayStock(STOCK_DATA_PATH);
+                        break;
+                    case 5:
                         check = false;
                         break ;
                     default:

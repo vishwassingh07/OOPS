@@ -1,0 +1,17 @@
+[
+  {
+    "NameOfStock":"Reliance",
+    "NumberOfStock":200,
+    "PriceOfStock":1000
+  },
+  {
+    "NameOfStock":"Tesla",
+    "NumberOfStock":100,
+    "PriceOfStock":1500
+  },
+  {
+    "NameOfStock":"LIC",
+    "NumberOfStock":300,
+    "PriceOfStock":1200
+  }
+]
